@@ -1,0 +1,1 @@
+export { PaniniThemeProvider } from './theme.provider';
