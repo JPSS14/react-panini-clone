@@ -1,18 +1,34 @@
 import { createTheme } from '@mui/material';
 
-const black = '#0D0D0D';
-const dark = '#262626';
-const mainTheme = '#595959';
-const light = '#A6A6A6';
-const white = '#F2F2F2';
+const primaryBg = "#c70005";
+const secondaryBg = "#e51d22";
+const primaryText = "#000000";
+const secondaryText = "#333333";
+const light = "#999999";
+const warning = "#f9e800";
+const primaryEmphasis = "#db9600";
+const secondaryEmphasis = "#f4921e";
+const primarySuccess = "#088c00";
+const secondarySuccess = "#10A162";
+const primaryInfo = "#2684c7";
+const secondaryInfo = "#3878e9";
+const newsletterBg = "#004280";
 
 declare module '@mui/material/styles' {
   type Panini = {
-    black: string;
-    dark: string;
-    mainTheme: string;
+    primaryBg: string;
+    secondaryBg: string;
+    primaryText: string;
+    secondaryText: string;
     light: string;
-    white: string;
+    warning: string;
+    primaryEmphasis: string;
+    secondaryEmphasis: string;
+    primarySuccess: string;
+    secondarySuccess: string;
+    primaryInfo: string;
+    secondaryInfo: string;
+    newsletterBg: string;
   };
   interface Palette {
     swgh: Panini;
@@ -25,11 +41,19 @@ declare module '@mui/material/styles' {
 export const theme = createTheme({
   palette: {
     swgh: {
-      black,
-      dark,
-      mainTheme,
+      primaryBg,
+      secondaryBg,
+      primaryText,
+      secondaryText,
       light,
-      white
+      warning,
+      primaryEmphasis,
+      secondaryEmphasis,
+      primarySuccess,
+      secondarySuccess,
+      primaryInfo,
+      secondaryInfo,
+      newsletterBg
     },
   },
   breakpoints: {
