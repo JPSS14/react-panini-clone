@@ -31,16 +31,16 @@ declare module '@mui/material/styles' {
     newsletterBg: string;
   };
   interface Palette {
-    swgh: Panini;
+    panini: Panini;
   }
   interface PaletteOptions {
-    swgh: Panini;
+    panini: Panini;
   }
 }
 
 export const theme = createTheme({
   palette: {
-    swgh: {
+    panini: {
       primaryBg,
       secondaryBg,
       primaryText,
