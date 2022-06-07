@@ -42,5 +42,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
+    "prettier": "2.6.2"
+  },
+  "husk":{
+    "hooks":{
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged":{
+    "src/**/*.{js,jsx,ts,tsx,json}":[
+      "prettier --write --ignore-unknown",
+      "eslint --max-warnings=0"
+    ],
+    "src/**/*.{css,scss}": ["prettier --write --ignore-unknown"]
   }
 }
