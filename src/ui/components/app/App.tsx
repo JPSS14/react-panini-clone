@@ -1,5 +1,8 @@
+import { PaniniThemeProvider } from "../theme";
+
 export const App = () => {
   return (
-    <div></div>
+    <PaniniThemeProvider>
+    </PaniniThemeProvider>
   );
 };
