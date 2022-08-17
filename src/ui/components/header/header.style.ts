@@ -3,15 +3,16 @@ import { SxProps, Theme } from "@mui/material";
 export const headerStyle: SxProps<Theme> = (theme) => {
   const { panini } = theme.palette;
   return {
-    background: panini.secondaryBg,
+    background: panini.primaryBg,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: `0 ${theme.spacing(1)}`,
-    height: '57px',
+    height: '65px',
 
     '& img': {
-      width: '85px'
+      width: '105px',
+      marginLeft: theme.spacing(4.5),
     }
   };
 };
@@ -21,25 +22,21 @@ export const headerLogoBox: SxProps<Theme> = (theme) => {
     display: 'flex',
     alignItems: 'center',
     color: theme.palette.common.white,
+    width: '50%',
   };
 };
 
 export const headerIconBox: SxProps<Theme> = (theme) => {
-  const {panini} = theme.palette;
   return {
     display: 'flex',
+    justifyContent: 'space-around',
     alignItems: 'center',
-    color: panini.warning,
+    width: '50%',
   };
 };
 
-export const teste: SxProps<Theme> = (theme) => {
-  const {panini} = theme.palette;
+export const headerIcon: SxProps<Theme> = () => {
   return {
-    background: panini.warning,
-
-    '& svg':{
-      fontSize: '1.5rem'
-    }
-  }
-}
+    fontSize: '1.7rem',
+  };
+};

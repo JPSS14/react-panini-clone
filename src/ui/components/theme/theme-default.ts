@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material';
 
-const primaryBg = "#c70005";
-const secondaryBg = "#e51d22";
+const primaryBg = "#004280";
+const secondaryBg = "#003567";
 const primaryText = "#000000";
 const secondaryText = "#333333";
 const light = "#999999";
